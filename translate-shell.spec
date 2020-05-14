@@ -1,8 +1,8 @@
 Name:           translate-shell
 Version:        0.9.6.12
-Release:        %mkrel 1
+Release:        1
 License:        Public Domain
-Summary:        Command-line interface and interactive shell for Google Translate
+Summary:        Command-line translator using Google Translate, Bing Translator, Yandex.Translate, etc.
 Group:          Text tools
 Url:            http://www.soimort.org/translate-shell
 Source0:        https://github.com/soimort/translate-shell/archive/v%{version}/%{name}-%{version}.tar.gz
@@ -17,7 +17,7 @@ Recommends:     curl
 
 %description
 Translate Shell is a command-line interface and interactive shell
-for Google Translate.
+for Google Translate, Bing Translator, Yandex Translate etc.
 It works just the way you want it to be.
 
 Translate Shell is a complete rewrite of Google Translate CLI Legacy,
