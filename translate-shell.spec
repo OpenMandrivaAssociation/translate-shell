@@ -1,6 +1,6 @@
 Name:           translate-shell
 Version:        0.9.7.1
-Release:        1
+Release:        2
 License:        Public Domain
 Summary:        Command-line translator using Google Translate, Bing Translator, Yandex.Translate, etc.
 Group:          Text tools
