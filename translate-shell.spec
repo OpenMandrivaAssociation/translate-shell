@@ -1,19 +1,19 @@
-Name:           translate-shell
-Version:        0.9.7.1
-Release:        2
-License:        Public Domain
-Summary:        Command-line translator using Google Translate, Bing Translator, Yandex.Translate, etc.
-Group:          Text tools
-Url:            http://www.soimort.org/translate-shell
-Source0:        https://github.com/soimort/translate-shell/archive/v%{version}/%{name}-%{version}.tar.gz
-BuildArch:      noarch
-BuildRequires:  gawk >= 4.0
-Requires:       gawk >= 4.0
-Recommends:     fribidi
-Recommends:     mplayer
-Recommends:     rlwrap
-Recommends:     groff
-Recommends:     curl
+Name:		translate-shell
+Version:	0.9.7.1
+Release:	3
+License:	Public Domain
+Summary:	Command-line translator using Google Translate, Bing Translator, Yandex.Translate, etc.
+Group:		Text tools
+Url:		http://www.soimort.org/translate-shell
+Source0:	https://github.com/soimort/translate-shell/archive/v%{version}/%{name}-%{version}.tar.gz
+BuildArch:	noarch
+BuildRequires:	gawk >= 4.0
+Requires:	gawk >= 4.0
+Recommends:	fribidi
+Recommends:	mplayer
+Recommends:	rlwrap
+Recommends:	groff
+Recommends:	curl
 
 %description
 Translate Shell is a command-line interface and interactive shell
@@ -29,7 +29,7 @@ including verbose translation, Text-to-Speech and interactive mode, etc.
 Run <man trans> in the terminal for usage information.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %make_build
@@ -43,4 +43,4 @@ install -pm0644 man/trans.1 %{buildroot}%{_mandir}/man1
 %files
 %doc LICENSE README.md WAIVER CONTRIBUTING.md
 %{_bindir}/trans
-%{_mandir}/*/*
+%doc %{_mandir}/*/*
