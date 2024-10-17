@@ -4,7 +4,7 @@ Release:	3
 License:	Public Domain
 Summary:	Command-line translator using Google Translate, Bing Translator, Yandex.Translate, etc.
 Group:		Text tools
-Url:		http://www.soimort.org/translate-shell
+Url:		https://www.soimort.org/translate-shell
 Source0:	https://github.com/soimort/translate-shell/archive/v%{version}/%{name}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	gawk >= 4.0
